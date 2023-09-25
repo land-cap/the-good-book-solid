@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "npx only-allow pnpm && panda codegen",
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
@@ -21,6 +21,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@pandacss/dev": "^0.15.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "3.0.3"
